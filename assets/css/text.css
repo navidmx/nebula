@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,500|Raleway:100,300,400,700');
+html,
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: 128px;
+    color: white;
+}
+
+h2 {
+    font-size: 48px;
+    color: #8d2999;
+}
+
+h3 {
+    font-size: 40px;
+    color: #8d2999;
+}
+
+h4 {
+    font-size: 36px;
+    color: white;
+}
+
+p {
+    font-size: 24px;
+    color: white;
+    font-family: 'Cabin', sans-serif;
+}
+
+#read-more {
+    font-weight: 100;
+}
+
+@media (max-width: 560px) {
+    h1 {
+        font-size: 80px;
+    }
+    h2 {
+        font-size: 36px;
+    }
+}
