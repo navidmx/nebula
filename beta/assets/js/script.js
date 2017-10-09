@@ -49,6 +49,8 @@ function submitField(type) {
                 password: GibberishAES.enc($('.field-password').val(), masterPass)
             }
         });
+        //Hide the modal after the button has been clicked
+        $('.modal-user').modal('hide');
     }
     if (type == "credit") {
         database.ref('users/fake-uid/password-manager').push().set({
@@ -61,7 +63,11 @@ function submitField(type) {
                 cvc: GibberishAES.enc($('.field-card-cvc').val(), masterPass)
             }
         });
+        $('.modal-credit').modal('hide');
     }
+    //Remove the modal backdrop after a button has been clicked
+    $('body').removeClass('modal-open');
+    $('.modal-backdrop').remove();
     //Reset current board before updating data
     $("#stored-info").html("<hr>");
     refreshStorage();
