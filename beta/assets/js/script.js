@@ -64,6 +64,7 @@ function submitField(type) {
     }
     //Reset current board before updating data
     $("#stored-info").html("<hr>");
+    refreshStorage();
 }
 
 function refreshStorage() {
