@@ -11,6 +11,15 @@ $("#landing").fadeIn(3000);
 $("#landing h2").delay(500).fadeIn(2000);
 $("#read-more").delay(2000).fadeIn(2000);
 
+//Fade in or out the "read-more" icon depending on scroll location
+window.onscroll = function (e) {
+    if (document.body.scrollTop > 100) {
+        $('#read-more').fadeOut(500);
+    } else {
+        $('#read-more').fadeIn(500);
+    }
+} 
+
 //Smooth scrolling for all anchor links
 $('a[href*="#"]')
     .not('[href="#"]')

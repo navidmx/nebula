@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Terminal</title>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nebula">
+    <!-- Libraries -->
+    <script src="https://use.fontawesome.com/102d004b3a.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200,400,700,900">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
+    <link rel="stylesheet" href="../../assets/lib/card/card.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+
+<body>
+    <div id="particles"></div>
+
+    <div class="container">
+        <div class="row" id="navbar">
+            <div class="col-md-12">
+                <a href="../../index.html">
+                <img id="logo" src="../../assets/img/banner_white.png">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Store one of the following:</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <button class="storeButton" data-toggle="modal" data-target=".modal-user">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    Username/Password
+                </button>
+            </div>
+            <div class="col-md-3">
+                <button class="storeButton" data-toggle="modal" data-target=".modal-credit">
+                    <i class="fa fa-credit-card" aria-hidden="true"></i>
+                    Credit Card
+                </button>
+            </div>
+            <div class="col-md-3">
+                <button class="storeButton" data-toggle="modal" data-target=".modal-address">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    Address
+                </button>
+            </div>
+            <div class="col-md-3">
+                <button class="storeButton" data-toggle="modal" data-target=".modal-question">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    Security Question
+                </button>
+            </div>
+        </div>
+        <div class="row" id="stored-info">
+            <hr>
+        </div>
+
+        <!-- Modal for Username/Password -->
+        <div class="modal modal-user fade" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="fields" class="modal-content">
+                    <h2>ENTER USERNAME AND PASSWORD</h2>
+                    <input type="text" placeholder="Identifier (Ex: 'Google Account')" class="field-identifier">
+                    <br>
+                    <input type="text" placeholder="Username/Email" class="field-username">
+                    <br>
+                    <input type="password" placeholder="Password" class="field-password">
+                    <br>
+                    <button onclick="submitField('user')">ADD</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Credit Cards -->
+        <div class="modal modal-credit fade" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="fields" class="modal-content">
+                    <h2>ENTER CARD INFO</h2>
+                    <div id="card-display"></div>
+                    <form id="card-form">
+                        <input type="text" placeholder="Identifier (Ex: 'Chase MasterCard')" class="field-card-identifier">
+                        <br>
+                        <input type="text" placeholder="Name on Card" class="field-card-name">
+                        <br>
+                        <input type="text" placeholder="Card Number" class="field-card-number">
+                        <br>
+                        <input type="text" placeholder="Expiry Date" class="field-card-expiry">
+                        <br>
+                        <input type="text" placeholder="CVC" class="field-card-cvc">
+                        <br>
+                    </form>
+                    <button onclick="submitField('credit')">ADD</button>
+                </div>
+            </div>
+        </div>
+
+        <br>
+    </div>
+
+    <!--Libraries-->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/aes.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+    <script src="../../assets/lib/card/jquery.card.js"></script>
+    <script src='../../assets/lib/sha256.min.js'></script>
+    <script src="../../assets/lib/aes.min.js"></script>
+    <script src="../../assets/js/script.js"></script>
+    <script src="../../assets/js/card.js"></script>
+</body>

@@ -1,0 +1,182 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #0e0e0e;
+    font-family: 'Raleway', sans-serif;
+}
+
+#navbar {
+    margin: 50px 0;
+}
+
+#logo {
+    height: 100px;
+}
+
+#sign-in {
+    height: 60px;
+    margin: 20px 0;
+    padding: 0 15px;
+    color: #137dbf;
+    background-color: #151515;
+    border: 3px solid #8d2999;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    transition: all 1s;
+}
+
+#sign-in:hover {
+    cursor: pointer;
+    border-color: #cb3bdd;
+}
+
+a, a:hover, a:focus {
+    text-decoration: none;
+}
+
+hr {
+    width: 100%;
+    color: white;
+    margin: 10px 15px;
+    border: 1px solid #616161;
+}
+
+h2 {
+    color: #137dbf;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+h3 {
+    color: white;
+    font-size: 24px;
+}
+
+p {
+    color: white;
+    margin: 0;
+    font-size: 18px;
+}
+
+.fa {
+    color: #c1c1c1 !important;
+    padding-right: 5px;
+}
+
+.storeButton {
+    height: 80px;
+    width: 100%;
+    margin: 20px 0;
+    padding: 0 15px;
+    color: #137dbf;
+    background-color: #151515;
+    border: 3px solid #8d2999;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all 1s;
+}
+
+.storeButton:focus {
+    outline: none;
+}
+
+.storeButton:hover {
+    cursor: pointer;
+    border-color: #cb3bdd;
+}
+
+.fields {
+    background-color: #0e0e0e;
+    border: 3px solid #8d2999;
+    border-radius: 5px;
+    padding: 10% 20%;
+}
+
+.fields h2 {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+
+.fields input {
+    width: 100%;
+    margin: 0 0 20px 0;
+    background-color: #151515;
+    color: #137dbf;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border: 3px solid #8d2999;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.fields input:focus {
+    outline: none;
+    border-color: #b732c7;
+}
+
+.fields button {
+    margin: 0 12.5%;
+    background-color: #137dbf;
+    width: 75%;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 900;
+    border: 3px solid #0d649a;
+    border-radius: 5px;
+    transition: all 1s;
+}
+
+.fields button:hover {
+    cursor: pointer;
+    background-color: #138edb;
+    border-color: #0f7ec3;
+}
+
+.card {
+    margin-top: 20px;
+    border: 3px solid #8d2999;
+    background-color: #151515;
+}
+
+.card-header {
+    border: none;
+    border-radius: none;
+    background-color: #8d2999;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+    color: white;
+}
+
+.card-header:first-child {
+    border-radius: 0;
+}
+
+.card-block .field-label {
+    margin: 10px 20px;
+}
+
+.card-block .field-label-name {
+    color: #137dbf;
+}
+
+.card-block .fa {
+    padding-right: 10px;
+}
+
+#card-form {
+    padding-top: 20px;
+}
+
+.jp-card-front, .jp-card-back {
+    background: #1d1d1d !important;
+}

@@ -7,6 +7,18 @@ body {
     display: none;
 }
 
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 #particles {
     display: none;
     position: absolute;
@@ -37,6 +49,11 @@ body {
     width: 100%;
     padding: 0 0 10px 0;
     bottom: 0;
+    transition: transform .5s;
+}
+
+#read-more:hover {
+    transform: translateY(5px);
 }
 
 #read-more .fa {
@@ -51,12 +68,4 @@ body {
 
 .panels {
     padding: 50px 10%;
-}
-
-.left {
-    text-align: left;
-}
-
-.right {
-    text-align: right;
 }
